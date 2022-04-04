@@ -1,31 +1,21 @@
 .searchInput {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
+    position: relative;
+    top: 40%;
+    width: 500px;
     height: 40px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 40px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 24px;
+    background-color: white;
 }
 
 .searchInput input {
     border: none;
     background: none;
     outline: none;
-    padding: 0;
     color: black;
-    font-size: 16px;
-    line-height: 40px;
-    width: 0;
-    transition: .5s;
-}
-
-.searchInput:hover > input {
-    width: 240px;
-    padding: 0 6px;
+    font-size: 18px;
+    width: 100%;
 }
