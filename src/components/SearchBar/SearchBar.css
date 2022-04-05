@@ -27,9 +27,9 @@
     overflow-y: auto;
 }
 
-/*.dataResult::-webkit-scrollbar {
+.dataResult::-webkit-scrollbar {
     display: none;
-}*/
+}
 
 .dataItem {
     display: flex;
@@ -41,5 +41,3 @@
 .dataItem:hover {
     background-color: #c7ede8;
 }
-
-/*color: "#49708a", size: "22px"*/

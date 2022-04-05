@@ -1,7 +1,7 @@
 import './SearchBar.css'
 import { GoSearch } from 'react-icons/go'
 import { IconContext } from "react-icons"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function SearchBar ({ data }) {
 
@@ -12,11 +12,17 @@ function SearchBar ({ data }) {
         setInputSearch(event.target.value)
 
         const newFilter = data.filter(value => {
-            return value.title.includes(inputSearch)
+            return value.title.toLowerCase().includes(inputSearch.toLocaleLowerCase())
         })
 
         setFilterSearch(newFilter)
     }
+
+    useEffect(() => {
+        if(inputSearch === "") {
+            setFilterSearch([])
+        }
+    }, [inputSearch])
 
     return (
         <>
