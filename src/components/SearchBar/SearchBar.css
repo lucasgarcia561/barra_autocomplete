@@ -1,5 +1,4 @@
 .searchInput {
-    position: relative;
     top: 40%;
     width: 500px;
     height: 40px;
@@ -19,3 +18,28 @@
     font-size: 18px;
     width: 100%;
 }
+
+.dataResult {
+    background: white;
+    border-radius: 35px;
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+/*.dataResult::-webkit-scrollbar {
+    display: none;
+}*/
+
+.dataItem {
+    display: flex;
+    align-items: center;
+    padding: 24px 32px;
+    gap: 16px;
+}
+
+.dataItem:hover {
+    background-color: #c7ede8;
+}
+
+/*color: "#49708a", size: "22px"*/
